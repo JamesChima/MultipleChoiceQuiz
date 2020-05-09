@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Choice Questions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Quiz Game Application</h1>
+    <div class="quiz_container">
+        <h3>Choose an option and click next to go to the next question</h3>
+        <div id="question"></div>
+        <div id="answer_list">
+            <div class="choice" id="A" onclick="checkAnswer('A')"></div>
+            <div class="choice" id="B" onclick="checkAnswer('B')"></div>
+            <div class="choice" id="C" onclick="checkAnswer('C')"></div>
+            <div class="choice" id="D" onclick="checkAnswer('D')"></div>
+        </div>
+        <div class="socre_next_container">
+            <button id="next_btn" class="next-btn:" onclick="loadNextQuestion();">Next</button>
+            <div id="score_counter"></div>  
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
